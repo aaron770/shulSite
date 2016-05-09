@@ -1,0 +1,619 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   =============================================== =========================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+    .flex-item {
+width: 100%;
+height: 100%;
+}
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+ body {
+/*background-image: url("../background.jpg");*/
+
+ 
+background:radial-gradient(circle at 50% 41%,#98d7e7 3%,#124e6f 12%,#124e6f 24%,rgba(210,202,171,0) 45%,rgba(210,202,171,0)) 50px 0,radial-gradient(circle at 50% 41%,#98d7e7 3%,#124e6f 26%,#124e6f 43%,rgba(210,202,171,0) 18%,rgba(210,202,171,0)) 0 50px;background-color:#0b0b2c;background-size:100px 100px;
+
+ /*
+    background-color: #026873;
+background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+background-size: 13px, 29px, 37px, 53px;*/
+ }
+
+.flex-wrapper {
+    display: -webkit-inline-flex; /* Safari */
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  height: 100vh;
+  justify-content: space-around;
+  width: 100%
+}
+
+/*============================================
+can add @media queries to change the layaout*/
+
+.flex-item {
+width: 29%;
+height: 40%;
+}
+
+/*===========================================
+the main layout*/
+
+
+
+#sponsors, #event, #picChange, #eventPic {
+    width: 20%;
+}
+
+#mainContent, #logoCase {
+    width: 48%;
+}
+
+#sponsors, #logoCase, #event {
+height: 25%
+}
+
+#picChange, #mainContent, #eventPic {
+    height: 60%;
+}
+
+/*===========================================
+the main style*/
+
+#upperMain, #lowerMain, #sponsors,  #event {
+    position: relative;
+    background-color:  white;/*#DBE9F4;*/ /*Azureish White  */
+    border-top-right-radius:1em;
+     /*position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 3em;
+    background-color: pink;
+    z-index: 1; */
+}
+
+.colorOfTop {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 18%;
+    background-color: #5C5E5E;
+    z-index: 1;
+}
+
+
+#event, #sponsors {
+    overflow: hidden;
+}
+
+
+#logo {
+    /*background-image: url("../https://farm6.staticflickr.com/5686/20574019415_4d7a5014ce_o.jpg");
+    background-repeat: no-repeat;
+    background-position: center;*/
+    height: 100%;
+    width: 100%;
+    color: white;   
+}
+#logo > p  {
+  text-align: center;
+}
+
+#logo > p > img {
+height: 80%;
+width: 50%;
+}
+/*===========================================
+the main bar style*/
+
+#mainBar {
+    background-color:  #5C5E5E;/*#DBE9F4; /*Azureish White  */ 
+    color: white;
+    width: 97%;
+    height: 5%;
+    margin: auto;
+    padding-top: 0.7em;
+}
+
+
+#clock {
+    width:30%;
+    line-height: normal;
+    display: inline-block;
+    padding-left: 1em;
+}
+#hebrewDate {
+    float: right;
+    padding-right: 1em;
+}
+
+/*===========================================
+this is for the main content*/
+
+#mainContent {
+    padding: 0.625em;
+}
+
+#upperMain {
+    height: 45%;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    background-color:  white;/*#DBE9F4;*/ /*Azureish White  */ 
+    margin-bottom: 1em;
+}
+
+#lowerMain {
+    height: 45%;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    background-color:  white;/*#DBE9F4;*/ /*Azureish White  */ 
+}
+
+#shabatSchedule, #WeeklySchedule {
+    height: 100%;
+    overflow: hidden;
+    width: 45%;
+    display: inline-block;
+
+}
+
+#shabatSchedule {
+    float: right;
+}
+
+#shabosTimes {
+    height: 100%;
+    display: inline-block;
+    width: 45%;
+}
+
+#candleLighting {
+    
+}
+
+#extraInfo {
+    height: 100%;
+    float: right;
+    width: 45%;
+}
+
+.centerText {
+   /* position: relative; 
+    bottom: -6.8px;*/
+    
+    margin-top: 10px;/*to make touch the top*/
+}
+
+.arrow_box {
+    position: relative;
+    z-index: 5;
+    width: 70%;/*width of the box*/
+    height:2.3em;
+    background: #FCDC95;/*#53d1d5;*/
+    vertical-align: middle;
+    border-bottom: 2.9px solid #738a96;/*shadow of the box*/
+    white-space:nowrap;
+}
+
+.arrow_box:after, .arrow_box:before {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_box:after {
+    border-color: rgba(83, 209, 213, 0);
+    border-left-color: #FCDC95;
+    border-width: 1.13em;/*width of the arrow*/
+    margin-top: -1.1em;/*width of the arrow position oposite of width*/
+}
+
+/*shadow of the box*/
+
+.arrow_box:before {
+    border-color: rgba(96, 230, 245, 0);
+    border-left-color: #738a96;/*rgba(0,0,0,0.19);/*different color than top maybe change*/
+    border-width:1.155em;/*width of the arrow*/
+    margin-top: -1em;/*width of the arrow position oposite of width*/
+}
+
+.arow {
+    background-color: solid green;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    overflow: hidden;
+}
+
+.arrowHead {
+    
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*the carousel
+*
+*I put two styles one is because wordpress adds p elements to each element
+*/
+
+#picChange, #eventPic {
+    
+    background-image: url("https://farm6.staticflickr.com/5712/20573995565_c2e82ae2d5_o.jpg");
+    box-shadow: 3px 3px 5px #888888;
+}
+
+.hideable {
+    display: none;
+}
+
+#picChange > img, #eventPic > img {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+#picChange > img:first-child, #eventPic > img:first-child {
+display: block;
+}
+
+#picChange > p , #eventPic > p {
+  margin: 0px;
+}
+
+/*the first p elment in here causes extra space it is added autamaticlally by wordpress*/
+#eventPic > p:first-of-type {
+  line-height: 0px;
+}
+
+#picChange > p > img, #eventPic > p > img {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+#picChange > p > img:first-child, #eventPic > p > img:first-child {
+display: block;
+}
+/*the marquee
+*
+*part of the marquee for scrolling up is in the javascript and is loaded afterwards to get a specific height
+*/
+
+/*.marquee {
+    display: inline-block;
+  width: 300px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #ccc;
+}*/
+/* Make it a marquee */
+
+.marquee {
+    width: 30%;
+    line-height: normal;
+    display: inline-block;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 10s linear infinite;
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { text-indent: 27.5em }
+    100% { text-indent: -30em }
+}
+
+.marqueeevent {
+    
+    position: relative;
+    overflow: hidden;
+    background: white;/*#DBE9F4;*/ /*Azureish White  */
+    display: inline-block;
+    white-space: normal;
+    box-sizing: border-box;
+    /*animation: marqueeevent 15s linear infinite;*/ /*moved to javascript for it to be dynamic  */
+}
+/**/
+#marqueeshabosCalenderHeight {
+    animation: marqueeshabosCalenderHeight 20s linear infinite;
+}/**/
+/* Chrome, Safari, Opera *//**/
+@-webkit-keyframes marqueeshabosCalenderHeight {
+    0%   { top: 0px }
+    100% { top: -100px }
+}
+@keyframes marqueeshabosCalenderHeight {
+    0%   { top: 0px }
+    100% { top: -240px }
+}
+/**/
+@media only screen and (max-width: 479px) {
+
+
+}
